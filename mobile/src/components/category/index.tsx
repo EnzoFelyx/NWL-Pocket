@@ -14,8 +14,6 @@ export function Category({ name, iconId, isSelected = false, ...rest }: Props) {
 
     const Icon = categoriesIcons[iconId]
 
-    console.log(iconId)
-
     return (
         <Pressable style={[styles.container, isSelected && styles.containerSelected]}
             {...rest}
