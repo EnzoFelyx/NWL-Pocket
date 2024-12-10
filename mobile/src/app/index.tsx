@@ -1,10 +1,20 @@
-import { View, Text } from 'react-native'
+import { View } from 'react-native'
+
+import { Button } from '@/components/button'
+import { Steps } from '@/components/steps'
+import { Welcome } from '@/components/welcome'
+import { styles } from './styles'
+
+
 
 export default function Index() {
-
     return (
-        <View style={{ flex: 1, justifyContent: "center", alignItems: 'center' }}>
-            <Text style={{ fontSize: 22 }}> Olá react native! </Text>
+        <View style={styles.container}>
+            <Welcome />
+            <Steps />
+            <Button >
+                <Button.Title>Começar</Button.Title>
+            </Button>
         </View>
     )
 }
