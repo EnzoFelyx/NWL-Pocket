@@ -49,9 +49,9 @@ export default function Home() {
     }, [category])
 
     return (
-        <View style={{ flex: 1 }}>
+        <View style={{ flex: 1, backgroundColor: "#c6c6c6" }}>
             <Categories data={categories} onSelected={setCategory} selected={category} />
-            <Places data={markets}/>
+            <Places data={markets} />
         </View>
     )
 }
