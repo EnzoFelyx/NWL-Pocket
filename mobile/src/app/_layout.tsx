@@ -11,6 +11,7 @@ import {
 
 import { Loading } from "@/components/loading"
 import { GestureHandlerRootView } from "react-native-gesture-handler"
+import { StatusBar } from "react-native"
 
 export default function Layout() {
 
@@ -27,6 +28,7 @@ export default function Layout() {
 
     return (
         <GestureHandlerRootView style={{ flex: 1 }}>
+            <StatusBar barStyle={'dark-content'} backgroundColor="transparent" translucent />
             <Stack
                 screenOptions={{
                     headerShown: false,

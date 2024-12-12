@@ -18,7 +18,7 @@ type Props = TouchableOpacityProps & {
 }
 
 export function Place({ data, ...rest }: Props) {
-    
+
     return (
         <TouchableOpacity style={styles.container} {...rest}>
 
@@ -27,7 +27,7 @@ export function Place({ data, ...rest }: Props) {
             <View style={styles.content}>
 
                 <Text style={styles.name}>{data.name}</Text>
-                <Text style={styles.description}>{data.description}</Text>
+                <Text style={styles.description} numberOfLines={2}>{data.description}</Text>
 
                 <View style={styles.footer}>
                     <IconTicket size={16} color={colors.red.base} />
